@@ -1,0 +1,17 @@
+.service-bg {
+    background-image: url('https://cdn.tatlerasia.com/asiatatler/i/sg/2021/07/01150814-phuket-2_cover_1800x1200.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+.info-bar {
+    background: #F4F4F4;
+}
+.content-gallery img {
+    width: 100%;
+    height: 200px;
+}
+.booking-form {
+    background-color: #F4F4F4;
+}

@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.header-logo {
+  font-family: 'Lobster', cursive;
+}
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+p{
+  color: #808285;
+}

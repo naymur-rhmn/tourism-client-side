@@ -1,0 +1,8 @@
+.c-img {
+    max-height: 700px;
+}
+.carousel-caption {
+    top: 50%;
+transform: translateY(-50%);
+left: 0%;
+}

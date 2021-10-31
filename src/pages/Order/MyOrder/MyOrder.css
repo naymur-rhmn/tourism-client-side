@@ -1,0 +1,14 @@
+.order-bg {
+    background-image: url('https://t4.ftcdn.net/jpg/04/09/53/07/240_F_409530780_5RUJS9RbKKVCBph7OxiLrB6rIQXFBBP7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.order-img {
+    height: 50px;
+    width: 100px;
+}
+.custom-height-order {
+    min-height: 60vh;
+}

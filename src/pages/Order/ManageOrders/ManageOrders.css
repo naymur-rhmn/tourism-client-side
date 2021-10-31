@@ -1,0 +1,7 @@
+.manage-order-bg {
+    background-image: url('https://go.init.st/images/city_animation.gif');
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
