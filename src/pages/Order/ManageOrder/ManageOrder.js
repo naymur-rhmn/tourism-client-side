@@ -8,7 +8,7 @@ const ManageOrder = ({ totalOrder }) => {
     const handleCancelOrder = id => {
         const proceed = window.confirm('Are you sure, you want to Cancel?');
         if (proceed) {
-            const url = `http://localhost:5000/myorders/${id}`
+            const url = `https://ghastly-mausoleum-76597.herokuapp.com/myorders/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

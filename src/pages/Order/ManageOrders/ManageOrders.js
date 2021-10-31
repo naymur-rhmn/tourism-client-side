@@ -6,7 +6,7 @@ const ManageOrders = () => {
     const [totalOrders, setTotalOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/myorders')
+        fetch('https://ghastly-mausoleum-76597.herokuapp.com/myorders')
             .then(res => res.json())
             .then(data => setTotalOrders(data))
     }, [])

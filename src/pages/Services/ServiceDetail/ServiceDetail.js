@@ -13,7 +13,7 @@ const ServiceDetail = () => {
     const { title, img, desc, days, team, price, _id, img_1, img_2, img_3, desc_1, desc_2, destination, dep_time, return_time, dress_code } = service;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${id}`)
+        fetch(`https://ghastly-mausoleum-76597.herokuapp.com/services/${id}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [])
@@ -25,7 +25,7 @@ const ServiceDetail = () => {
         data.approval = 'Pending';
         data.title = title;
         data.img = img;
-        fetch('http://localhost:5000/orders', {
+        fetch('https://ghastly-mausoleum-76597.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

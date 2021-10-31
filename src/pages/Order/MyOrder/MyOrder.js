@@ -7,7 +7,7 @@ const MyOrder = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/myorders')
+        fetch('https://ghastly-mausoleum-76597.herokuapp.com/myorders')
             .then(res => res.json())
             .then(data => {
                 const myOrder = data.filter(dt => dt.email === user.email);
@@ -36,7 +36,7 @@ const MyOrder = () => {
                                     const handleDeleteOrder = id => {
                                         const proceed = window.confirm('Are you sure, want to cancel Booking?');
                                         if (proceed) {
-                                            const url = `http://localhost:5000/myorders/${id}`
+                                            const url = `https://ghastly-mausoleum-76597.herokuapp.com/myorders/${id}`
                                             fetch(url, {
                                                 method: 'DELETE'
                                             })

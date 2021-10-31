@@ -41,6 +41,7 @@ const Header = () => {
                                 </li>
                             </ul>
                             <span className="ms-auto d-flex align-items-center">
+                                {(user.email) && <Link to="/manageorders"><button className="btn text-info border-0 me-2 fw-bold ">Add A New Service</button></Link>}
                                 {(user.email) && <Link to="/manageorders"><button className="btn text-info border-0 me-2 fw-bold ">Manage Orders</button></Link>}
                                 {(user.email) && <Link to="/myorders"><button className="btn text-info border-0 me-2 fw-bold ">My Order</button></Link>}
                                 {(user.email) && <span className="me-2 bg-info py-2 px-3 fw-bold text-warning rounded-circle">{user.displayName.slice(0, 1)}</span>}
