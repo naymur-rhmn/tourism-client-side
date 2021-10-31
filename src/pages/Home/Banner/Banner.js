@@ -4,8 +4,15 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <div>
-            <Carousel className="carousel">
+        <div className="banner-img py-5">
+            <div className="row py-5 my-5 justify-content-center">
+                <div className="col-lg-8 py-5 banner my-5 text-center">
+                    <h3 className="fw-bold mt-4">TRAVEL WITH US</h3>
+                    <h1 className="fw-bold mb-4">ENJOY ADVENTURE</h1>
+                </div>
+            </div>
+
+            {/* <Carousel className="carousel">
                 <Carousel.Item data-interval={false}>
                     <img
                         className="d-block w-100 c-img"
@@ -39,7 +46,7 @@ const Banner = () => {
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-            </Carousel>
+            </Carousel> */}
         </div>
     );
 };

@@ -1,0 +1,13 @@
+.single-service:hover {
+    transition: .3s;
+    /* box-shadow: 0px 0px 12px rgb(194, 180, 100); */
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.service-img {
+    height: 250px;
+    overflow: hidden;
+}
+.single-service:hover img {
+    transition: .4s ease-in-out;
+    transform: scale(1.04);
+}

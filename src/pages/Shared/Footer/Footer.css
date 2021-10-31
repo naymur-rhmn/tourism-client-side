@@ -1,0 +1,30 @@
+.footer {
+    background-color: #273444;
+    border-top: 3px solid #FFC107;
+}
+.footer-middle {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.footer h2{
+    font-size: 40px;
+}
+.gradient-btn {
+    background: rgb(31,214,232);
+    background: linear-gradient(90deg, rgba(31,214,232,1) 0%, rgba(13,185,246,1) 100%);
+    border: none;
+    padding: 14px 22px;
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 18px;
+}
+.gradient-btn:hover {
+    opacity: .9;
+    transition: .3s;
+}
+.contacts span {
+    color: #0ECBF5;
+}
+.social-icon span {
+    cursor: pointer;
+}

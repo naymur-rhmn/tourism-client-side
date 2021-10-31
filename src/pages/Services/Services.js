@@ -11,12 +11,12 @@ const Services = () => {
     }, [])
 
     return (
-        <div>
+        <div className="py-5">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8 col-md-8 col-12 mx-auto">
-                        <div className="service-title">
-                            <h2>Our Packages</h2>
+                        <div className="service-title pt-5 text-center mb-5">
+                            <h2 className="fw-bold">Our Packages</h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime enim hic voluptas rem animi sunt! Incidunt quisquam enim consequatur odit facere beatae?</p>
                         </div>
                     </div>

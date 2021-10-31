@@ -34,19 +34,20 @@ const MyOrder = () => {
                                     const { _id, title, img, ticketNumber, name, approval } = order;
 
                                     const handleDeleteOrder = id => {
-                                        const url = `http://localhost:5000/myorders/${id}`
-                                        fetch(url, {
-                                            method: 'DELETE'
-                                        })
-                                            .then(res => res.json())
-                                            .then(data => {
-                                                if (data.deletedCount) {
-                                                    alert('Canceled successfully');
-                                                    window.location.reload();
-                                                    /* const remainingOrder = orders.filter(order._id !== id);
-                                                    setOrders(remainingOrder) */
-                                                }
+                                        const proceed = window.confirm('Are you sure, want to cancel Booking?');
+                                        if (proceed) {
+                                            const url = `http://localhost:5000/myorders/${id}`
+                                            fetch(url, {
+                                                method: 'DELETE'
                                             })
+                                                .then(res => res.json())
+                                                .then(data => {
+                                                    if (data.deletedCount) {
+                                                        alert('Canceled successfully');
+                                                        window.location.reload();
+                                                    }
+                                                })
+                                        }
 
                                     }
                                     return (
@@ -61,7 +62,7 @@ const MyOrder = () => {
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <button onClick={() => handleDeleteOrder(_id)} className="btn bg-warning py-2 me-1">Cancel Booking</button>
+                                                    <button onClick={() => handleDeleteOrder(_id)} className="btn bg-secondary text-white py-2 me-1">Cancel Booking</button>
                                                 </div>
 
                                             </div>

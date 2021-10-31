@@ -1,0 +1,14 @@
+.explore-bg {
+    background-image: url('https://t4.ftcdn.net/jpg/00/65/54/01/360_F_65540119_XVOZEPUyzgbrn7VLoHqOZVskulWpwHKK.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-color: lavender;
+}
+
+.explore-bg h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: cadetblue;
+}

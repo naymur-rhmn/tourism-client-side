@@ -1,3 +1,14 @@
 .header-logo {
     font-family: 'Lobster', cursive;
 }
+.clr {
+    color: cadetblue;
+}
+.clr:hover {
+    color: red;
+}
+.navlink {
+    text-decoration: none;
+    margin-right: 10px;
+    color: gray;
+}

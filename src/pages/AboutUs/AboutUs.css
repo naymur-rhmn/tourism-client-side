@@ -1,0 +1,12 @@
+.custom-underline {
+    position: relative;
+}
+.custom-underline::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    width: 55px;
+    content: "";
+    background: #FFC107;
+}

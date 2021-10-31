@@ -6,19 +6,20 @@ const ManageOrder = ({ totalOrder }) => {
 
 
     const handleCancelOrder = id => {
-        const url = `http://localhost:5000/myorders/${id}`
-        fetch(url, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount) {
-                    alert('Canceled successfully');
-                    window.location.reload();
-                    /* const remainingOrder = orders.filter(order._id !== id);
-                    setOrders(remainingOrder) */
-                }
+        const proceed = window.confirm('Are you sure, you want to Cancel?');
+        if (proceed) {
+            const url = `http://localhost:5000/myorders/${id}`
+            fetch(url, {
+                method: 'DELETE'
             })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount) {
+                        alert('Canceled successfully');
+                        window.location.reload();
+                    }
+                })
+        }
 
     }
     return (

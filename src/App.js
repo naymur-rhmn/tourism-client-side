@@ -6,13 +6,17 @@ import {
 } from "react-router-dom";
 import Header from './pages/Shared/Header/Header';
 import Home from './pages/Home/Home/Home';
-import Footer from './pages/Shared/Footer/Footer';
+
 import Login from './pages/Shared/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import ServiceDetail from './pages/Services/ServiceDetail/ServiceDetail';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import MyOrder from './pages/Order/MyOrder/MyOrder';
 import ManageOrders from './pages/Order/ManageOrders/ManageOrders';
+import Footer from './pages/Shared/Footer/Footer';
+import NotFound from './pages/NotFound/NotFound';
+import AboutUs from './pages/AboutUs/AboutUs';
+import Gallery from './pages/Gallery/Gallery';
 
 function App() {
   return (
@@ -26,6 +30,12 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
+          <Route path="/aboutus">
+            <AboutUs></AboutUs>
+          </Route>
+          <Route path="/gallery">
+            <Gallery></Gallery>
+          </Route>
           <PrivateRoute path="/servicedetail/:id">
             <ServiceDetail></ServiceDetail>
           </PrivateRoute>
@@ -37,6 +47,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>
